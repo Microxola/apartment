@@ -546,7 +546,7 @@ const ModernNavbar = () => {
 
       {/* Mobile Menu Overlay - Fixed z-index */}
       <div
-        className={`fixed inset-0 z-40 bg-black/30 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-100 bg-black/30 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
           isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
         onClick={() => setIsMobileMenuOpen(false)}

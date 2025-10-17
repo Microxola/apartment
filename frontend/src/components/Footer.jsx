@@ -17,6 +17,7 @@ import {
   Building
 } from 'lucide-react';
 
+
 const Footer = () => {
   const [email, setEmail] = useState('');
 

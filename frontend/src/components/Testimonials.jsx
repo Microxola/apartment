@@ -7,6 +7,9 @@ import {
   MapPin,
   Home
 } from 'lucide-react';
+import unsplash from "../assets/m1.png";
+import unsplash1 from "../assets/m2.png";
+import unsplash2 from "../assets/m3.png";
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,7 +20,7 @@ const Testimonial = () => {
       id: 1,
       name: "Chinelo Okonkwo",
       role: "Software Engineer",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+      image: unsplash,
       content: "Finding my apartment through this platform was seamless. The virtual tour feature helped me make a decision from Lagos, and when I arrived in Abuja, everything was exactly as described. The customer service team was incredibly helpful throughout the process.",
       rating: 5,
       location: "Abuja",
@@ -25,9 +28,9 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      name: "Aisha Bello Mohammed",
+      name: "Bello Mohammed",
       role: "Business Owner",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+      image: unsplash1,
       content: "As a business owner relocating to Lagos, I needed a comfortable and secure apartment quickly. The team understood my needs and presented options that matched my criteria perfectly. The lease process was transparent with no hidden costs.",
       rating: 5,
       location: "Lagos",
@@ -35,9 +38,9 @@ const Testimonial = () => {
     },
     {
       id: 3,
-      name: "Titilayo Adebayo",
+      name: "Thomas Adebayo",
       role: "University Lecturer",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+      image: unsplash2,
       content: "I've rented through several platforms, but this one stands out for its professionalism. The verification process ensured I was dealing with legitimate property owners, and the apartment I found in Port Harcourt exceeded my expectations. Highly recommended!",
       rating: 5,
       location: "Port Harcourt",
@@ -47,7 +50,7 @@ const Testimonial = () => {
       id: 4,
       name: "Chinedu Eze",
       role: "Banker",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+      image:  unsplash,
       content: "The quality of apartments on this platform is exceptional. I found a modern, fully-furnished apartment in Ikeja that was perfect for my needs. The maintenance response has been prompt whenever I've had issues. A truly premium service worth every kobo.",
       rating: 4,
       location: "Lagos",

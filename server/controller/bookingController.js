@@ -123,6 +123,8 @@ export const getUserBooking = async (req, res) => {
 
 export const getHotelBooking = async (req, res) => { 
    try {
+        const Allproperty = await Room.countDocuments();
+
         const bookings = await Booking.find({isPaid: true}) .populate([
                 { path: 'room', model: 'Room' },
                 { path: 'hotel', model: 'Hotel' },
@@ -130,7 +132,7 @@ export const getHotelBooking = async (req, res) => {
             ]).sort({created_at: -1})
         const totalBooking = bookings.length;
         const totalRevenue = bookings.reduce((acc, booking) => acc+booking.totalPrice, 0)
-        res.json({success: true, dashboardData: {totalBooking, totalRevenue, bookings}})
+        res.json({success: true, dashboardData: {totalBooking, totalRevenue, bookings, Allproperty}})
    } catch (error) {
             console.log(error);
             res.json({success: false, message: 'failed to fetch dashboard data'});

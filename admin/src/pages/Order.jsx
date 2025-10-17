@@ -77,8 +77,8 @@ const Order = ({ token }) => {
       <Title 
         align='left' 
         font='outfit' 
-        title='All Orders' 
-        subTitle='Monitor all orders made by users, track bookings and analyze revenue—all in one place. Stay updated with real-time insights to ensure smooth operation.'
+        title='All Purchased Orders' 
+        subTitle='Monitor all orders made by users, track property purchase and analyze revenue—all in one place. Stay updated with real-time insights to ensure smooth operation.'
       />
       
       {/* Stats Overview */}
@@ -166,7 +166,7 @@ const Order = ({ token }) => {
       <div className="bg-white rounded-xl shadow-sm overflow-hidden">
         <div className="p-6 border-b border-gray-100 flex justify-between items-center">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900">All Bookings</h3>
+            <h3 className="text-lg font-semibold text-gray-900">All Purchase Order</h3>
             <p className="text-sm text-gray-500 mt-1">{sortedBookings.length} orders found</p>
           </div>
           {/* <button className="text-[#ff6725] hover:text-blue-800 text-sm font-medium flex items-center">
@@ -182,7 +182,7 @@ const Order = ({ token }) => {
             <thead className="bg-gray-50">
               <tr>
                 <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Customer</th>
-                <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Room Details</th>
+                <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Property Details</th>
                 <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
                 <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                 <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>

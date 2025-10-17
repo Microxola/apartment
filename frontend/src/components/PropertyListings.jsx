@@ -189,7 +189,7 @@ const PropertyListings = () => {
       </div>
 
       {/* Featured Listings Section */}
-      <div className="mt-40 lg:mt-32 xl:mt-40">
+      {/* <div className="mt-40 lg:mt-32 xl:mt-40">
         <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             <div className="text-center mb-10 lg:mb-6">
@@ -264,7 +264,7 @@ const PropertyListings = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

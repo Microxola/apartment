@@ -47,7 +47,7 @@ const PerfectMatch = () => {
                 Browse 745,000+ homes for purchase, rent, and mortgage options in our listings.
               </p>
               
-              <form className="relative mb-8">
+              <form className="relative mb-8 mr-5">
                 <input 
                   type="email" 
                   placeholder="Your Email Address..." 
